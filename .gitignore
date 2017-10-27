@@ -1,3 +1,5 @@
 nbproject/*
 .DS_Store
 .pyc
+config/*.pyc
+config/__pycache__/*
