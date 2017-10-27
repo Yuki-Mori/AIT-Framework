@@ -1,4 +1,4 @@
-#! /usr/local/bin/python3
+#! /usr/bin/python
 
 from config.settings import *
 from config import generator as gn
