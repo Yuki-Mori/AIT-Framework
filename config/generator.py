@@ -21,4 +21,10 @@ def generateMakefile():
 
     cpp_objs = '.o '.join(settings.CPP_MODULES)+'.o'
 
-    return settings.MAKEFILE_TEMPLATE.format(c_objs='',cpp_objs=cpp_objs, libraries=libraries, app_dirs=app_dirs, app_includes=app_includes)
+    return settings.MAKEFILE_TEMPLATE.format(
+        c_objs='',
+        cpp_objs=cpp_objs,
+        libraries=libraries,
+        app_dirs=app_dirs,
+        app_includes=app_includes
+    )
