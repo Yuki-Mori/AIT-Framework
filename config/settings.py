@@ -1,4 +1,4 @@
-APP_NAME = 'aitframework-alpha'
+APP_NAME = 'AIT-Framework'
 
 CPP_MODULES = [
     'String',
