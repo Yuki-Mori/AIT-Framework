@@ -10,13 +10,13 @@ This framework makes easier to add objects, directories, or libraries in your pr
 ## Install
 Before installing, change directory to workspace in sdk directory of hrp2.
 
-Installation is done cloning from Github:
+Installation is done cloning from [Github](https://github.com/Yuki-Mori/AIT-Framework):
 
-```$ git clone https://github.com/Yuki-Mori/AIT-Framework.git```
+	$ git clone https://github.com/Yuki-Mori/AIT-Framework.git
 
 If you can `install` option, you can make alias `aitfw`.
 
-```$ sudo ./aitfw.py install```
+	$ sudo ./aitfw.py install
 
 ## Usage
 In this framework, you usually use `aitfw`(or `./aitfw.py`) command when what you do something.
