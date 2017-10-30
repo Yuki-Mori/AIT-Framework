@@ -121,6 +121,19 @@ bool String::operator !=(const String& str) const{
     return !this->operator ==(str);
 }
 
+bool String::operator<(const char* str) const{
+    int hc = 0; //hash_code
+    size_t ss = strlen(str); //string_size
+    for(unsigned int i = 0; i < ss; i++){
+        hc += (int)pow((double)(str[i]*31),(double)ss-(i+1));
+    }
+    return this->hashCode() < hc;
+}
+
+bool String::operator<(const String& str) const{
+    return this->hashCode() < str.hashCode();
+}
+
 /**
  * Char型のポインタを返します。
  * @return Char型のポインタ

@@ -38,6 +38,8 @@ namespace ait {
         bool operator==(const String& str) const;
         bool operator!=(const char* str) const;
         bool operator!=(const String& str) const;
+        bool operator<(const char* str) const;
+        bool operator<(const String& str) const;
 
         //メンバ関数
         const char* getCharPointer(void) const;
