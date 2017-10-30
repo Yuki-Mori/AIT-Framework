@@ -5,7 +5,7 @@ CPP_MODULES = [
 ]
 
 DIRECTORIES = [
-    'AITFramework',
+    'ait/lib'
 ]
 
 INCLUDE_LIBRARIES = [
