@@ -1,11 +1,10 @@
 APP_NAME = 'AIT-Framework'
 
 CPP_MODULES = [
-    'String',
 ]
 
 DIRECTORIES = [
-    'ait/lib'
+    'ait/lib',
 ]
 
 INCLUDE_LIBRARIES = [

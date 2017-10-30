@@ -1,5 +1,6 @@
 #include "app.h"
 
+void *__dso_handle=0;
 void initialize_task(intptr_t exinf) {
     ext_tsk();
 }
