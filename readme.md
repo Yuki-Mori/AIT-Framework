@@ -7,7 +7,7 @@
 **AIT-Framework** is a framework for [EV3RT](http://dev.toppers.jp/trac_user/ev3pf/wiki/WhatsEV3RT) and [ET Robocon](http://www.etrobo.jp/) projects made by **Team AIT**.<br>
 This framework makes easier to add objects, directories, or libraries in your projects.
 
-## Install
+## Installation
 Before installing, change directory to workspace in sdk directory of hrp2.
 
 Installation is done cloning from [Github](https://github.com/Yuki-Mori/AIT-Framework):
@@ -19,6 +19,7 @@ If you can `install` option, you can make alias `aitfw`.
 	$ sudo ./aitfw.py install
 
 ## Usage
+### Command and Options
 In this framework, you usually use `aitfw`(or `./aitfw.py`) command when what you do something.
 
 You can use some options:
@@ -26,3 +27,6 @@ You can use some options:
 * `compile [-d debug]`: compile project for EV3 and be made `app` file at workspace directory. if you use `-d` option, you can leave `app.cfg` and `Makefile.ini` used when compiling.
 * `mkdir <directory name>`: be made directory for package and also made `include` and `src` directory in that.
 * `uninstall`: uninstall `aitfw` alias.
+
+### Project's Configuration
+:TODO
