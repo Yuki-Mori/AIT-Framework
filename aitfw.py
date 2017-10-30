@@ -7,6 +7,7 @@ import sys
 
 COMPILE_OPTIONS = [
     '',
+    '-d',
     'debug',
 ]
 
@@ -32,9 +33,22 @@ def mkdir(dir_name):
     os.system('mkdir {dir_name}/include'.format(dir_name = dir_name))
 
 def usage():
-    output_str='Usage: aitfw [compile [option]] [mkdir <dir_name>]'
-    os.system('echo \"{str}\"'.format(str=output_str))
+    install_str='usage: ./aitfw.py install'
+    uninstall_str='usage: aitfw uninstall'
+    compile_str='usage: aitfw compile [-d debug]'
+    mkdir_str='usage: aitfw mkdir <directory name>'
+    os.system('echo \"{str}\"'.format(str=install_str))
+    os.system('echo \"{str}\"'.format(str=uninstall_str))
+    os.system('echo \"{str}\"'.format(str=compile_str))
+    os.system('echo \"{str}\"'.format(str=mkdir_str))
 
+def install():
+    os.system('echo \"alias aitfw=\\\'./aitfw.py\\\'\" >> ~/.bash_profile')
+    os.system('source ~/.bash_profile')
+
+def uninstall():
+    os.system('sed -i -e  \"/aitfw.py/d\" ~/.bash_profile')
+    os.system('source ~/.bash_profile')
 
 if __name__ == '__main__':
     argc = len(sys.argv)
@@ -48,5 +62,9 @@ if __name__ == '__main__':
         compile(option)
     elif sys.argv[1] == 'mkdir' and argc >= 3:
         mkdir(sys.argv[2])
+    elif sys.argv[1] == 'install':
+        install()
+    elif sys.argv[1] == 'uninstall':
+        uninstall()
     else :
         usage()
