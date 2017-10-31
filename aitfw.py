@@ -23,7 +23,7 @@ def compile(option):
     os.chdir('../')
     os.system('make app={app_name}'.format(app_name=APP_NAME))
     os.chdir('{dir_name}'.format(dir_name=APP_NAME))
-    if option != 'debug':
+    if option != 'debug' and option != '-d':
         os.remove('./app.cfg')
         os.remove('./Makefile.inc')
 
