@@ -43,7 +43,7 @@ def usage():
     os.system('echo \"{str}\"'.format(str=mkdir_str))
 
 def install():
-    os.system('echo \"alias aitfw=\\\'./aitfw.py\\\'\" >> ~/.bash_profile')
+    os.system('echo \"alias aitfw=\'./aitfw.py\'\" >> ~/.bash_profile')
     os.system('source ~/.bash_profile')
 
 def uninstall():

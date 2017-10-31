@@ -19,7 +19,9 @@ def generateMakefile():
         app_dirs += settings.APP_DIR_TEMPLATE.format(dir_name = directory) + ' '
         app_includes += settings.APP_INCLUDE_TEMPLATE.format(dir_name = directory) + ' '
 
-    cpp_objs = '.o '.join(settings.CPP_MODULES)+'.o'
+    cpp_objs = ''
+    if len(settings.CPP_MODULES) != 0:
+        cpp_objs = '.o '.join(settings.CPP_MODULES)+'.o'
 
     return settings.MAKEFILE_TEMPLATE.format(
         c_objs='',
