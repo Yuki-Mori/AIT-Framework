@@ -30,12 +30,12 @@ In this framework, you usually use `aitfw`(or `./aitfw.py`) command when what yo
 
 You can use some options:
 
-* `compile [-d debug]`: compile project for EV3 and be made `app` file at workspace directory. if you use `-d` option, you can leave `app.cfg` and `Makefile.ini` used when compiling.
-* `mkdir <directory name>`: be made directory for package and also made `include` and `src` directory in that.
-* `uninstall`: uninstall `aitfw` alias.
+* `compile [-d debug]`: Compile project for EV3 to create the `app` file at workspace directory. If you use the `-d` option, you can leave the `app.cfg` and `Makefile.ini` used when compiling.
+* `mkdir <directory name>`: Create the directory for package and also made `include` and `src` directories in that.
+* `uninstall`: Uninstall `aitfw` alias.
 
 ### Project's Configuration
-You can change the project settings by editing `config / settings.py` or symbolic link `settings.py`.
+You can change the project settings by editing `config/settings.py` or symbolic link `settings.py`.
 
 ```sh
 $ vi config/settings.py
