@@ -14,8 +14,9 @@ Installation is done cloning from [Github](https://github.com/Yuki-Mori/AIT-Fram
 
 	$ git clone https://github.com/Yuki-Mori/AIT-Framework.git
 
-If you can use `install` option, you can make alias `aitfw`.
+If you use `install` option, you can make alias `aitfw`.
 
+	$ cd AIT-Framework
 	$ sudo ./aitfw.py install
 
 ## Usage
