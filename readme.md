@@ -12,12 +12,17 @@ Before installing, **change directory** to workspace in sdk directory of hrp2.
 
 Installation is done cloning from [Github](https://github.com/Yuki-Mori/AIT-Framework):
 
-	$ git clone https://github.com/Yuki-Mori/AIT-Framework.git
+```sh
+$ git clone https://github.com/Yuki-Mori/AIT-Framework.git
+```
 
 If you use `install` option, you can make alias `aitfw`.
 
-	$ cd AIT-Framework
-	$ sudo ./aitfw.py install
+```sh
+$ cd AIT-Framework
+$ sudo ./aitfw.py install
+```
+	
 
 ## Usage
 ### Command and Options
@@ -30,4 +35,14 @@ You can use some options:
 * `uninstall`: uninstall `aitfw` alias.
 
 ### Project's Configuration
+You can change the project settings by editing `config / settings.py` or symbolic link `settings.py`.
+
+```sh
+$ vi config/settings.py
+
+#using symbolic link
+$ vi settings.py
+```
+
+
 :TODO
